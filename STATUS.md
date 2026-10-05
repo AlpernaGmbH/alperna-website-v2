@@ -51,6 +51,7 @@ Stand: 03.10.2026. **Etappe 1a (Infrastruktur) ist im Code fertig und getestet. 
 
 Laufzeit: `@upstash/redis`, `@upstash/ratelimit` (Zähler, Limits); `react-hook-form`, `@hookform/resolvers`, `zod` (Formular, Validierung); `pdf-lib`, `@pdf-lib/fontkit` (PDF mit eigenen Schriften), `docx` (Word), `qrcode`, `jszip` (ab 4a), `fuse.js` (Suche), `gray-matter`, `remark`, `remark-html` (Seitentexte); `@base-ui/react`, `class-variance-authority`, `cn`, `lucide-react`, `tw-animate-css`, `shadcn` (kommen mit shadcn/ui).
 Entwicklung: `vitest`, `@vitejs/plugin-react`, `jsdom`, `@testing-library/*` (Tests); `@playwright/test` (Smoke); `tsx` (Skripte); `lighthouse`, `chrome-launcher` (`npm run lh`); `@types/qrcode`.
+Werkzeug (kein npm-Paket): Claude-Code-Plugin `vercel@claude-plugins-official` in `.claude/settings.json` (Projekt-Scope). Liefert Vercel-Skills, Agents und `/vercel-plugin:deploy|env|status`. Telemetrie ist standardmässig an, abschaltbar mit `VERCEL_PLUGIN_TELEMETRY=off`.
 
 ## Bekannte Punkte
 
