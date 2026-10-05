@@ -30,7 +30,7 @@ Grundlage sind die Skills linkedin-comment-opportunity-finder und linkedin-smart
 
 ### Schritt 1: Orientierung
 
-- `get_me`: `username` merken (eigene Posts erkennen, sie kommen mit `profile_url`, die auf den Username endet). `ai_settings` lesen. Stehen dort noch «Marketing Services» oder «Marketingverantwortliche», im Bericht oben warnen, dass die Taplio-Settings veraltet sind, und mit den Parametern aus diesem Text arbeiten.
+- `get_me`: `username` merken (eigene Posts erkennen, sie kommen mit `profile_url`, die auf den Username endet). `ai_settings` lesen und als Stimme und Nische nutzen; wo dieser Text genauer ist, gilt dieser Text.
 - `list_comment_drafts`: Entwürfe und Kommentare der letzten 2 Tage lesen. Autoren und Post-URNs auf die Sperrliste für heute.
 
 ### Schritt 2: Kandidaten holen (drei Quellen, rund 70 Posts)
@@ -66,7 +66,7 @@ Pro Kommentar `create_comment_draft(post_urn="<urn>", content="<text>")`. Die zu
 
 ### Schritt 7: Bericht im Chat
 
-Zuerst Warnungen (Settings veraltet, weniger als 15 Treffer, Fehler bei Aufrufen). Dann eine Tabelle mit 15 Zeilen: Nummer, Autor, Thema in sechs Wörtern, Alter in Stunden, Likes und Kommentare, Punkte von 12, Typ (Reichweite oder Peer), Winkel, Draft-ID, Kommentartext. Danach eine Zeile: «Freigabe pro Nummer: ‹1, 4, 7 einplanen›. Dann plane ich nur diese mit commit_comment_draft, verteilt über den Tag.»
+Zuerst Warnungen (weniger als 15 Treffer, Fehler bei Aufrufen). Dann eine Tabelle mit 15 Zeilen: Nummer, Autor, Thema in sechs Wörtern, Alter in Stunden, Likes und Kommentare, Punkte von 12, Typ (Reichweite oder Peer), Winkel, Draft-ID, Kommentartext. Danach eine Zeile: «Freigabe pro Nummer: ‹1, 4, 7 einplanen›. Dann plane ich nur diese mit commit_comment_draft, verteilt über den Tag.»
 
 ## Teil B: Freigabe (nur wenn Andrej Nummern nennt)
 
